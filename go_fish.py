@@ -130,10 +130,6 @@ def play_game():        # create gameplay loop
 
         player.check_for_pairs()
 
-        # Skip computer's turn if it has no cards
-        if not computer.hand:
-            continue
-
         # computer's turn
         comp_ask_rank = random.choice(list(computer.get_all_ranks()))
         print(f"\nComputer asks: Do you have any {comp_ask_rank}s?")
